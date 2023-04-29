@@ -1,13 +1,12 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+<!--
+NO ROBOTS POLICY
+Enforcement may include IP propagation to blacklisted database(s)
+Proceed at own risk
 -->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Snow Bootstrap Website Template | Home :: w3layouts</title>
+<title>Pinecone & Hedgehog - Automated Marketing</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -59,18 +58,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row">
 			  <div class="col-md-12">
 				 <div class="header-left">
-					 <div class="logo">
-						<a href="index.html"><img src="images/newlogo.png" alt=""/></a>
+					 <div class="logo"> 
+						<a href="index.html"><img style="max-height:56px;" src="images/newlogo.png" alt=""/></a>
 					 </div>
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						  
+						  
 						    <ul class="nav" id="nav">
 						    	<li><a href="#shopme">Digital Media Services Shop</a></li>
 						    	<!--<li><a href="team.html">Team</a></li>-->
 						    	<!--<li><a href="experiance.html">Events</a></li>-->
 						    	<!--<li><a href="experiance.html">Experiance</a></li>-->
 						    	<!--<li><a href="shop.html">Company</a></li>-->
-								<li><a href="mailto:webmaster@example.com">Contact</a></li>								
+								<li><a href="mailto:info@phautomarketing.com">Contact</a></li>								
 								<div class="clear"></div>
 							</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
@@ -1194,41 +1195,360 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 
+
+<style>
+	/* Popup container - can be anything you want */
+	.popup {
+	  position: relative;
+	  display: inline-block;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+	
+	/* The actual popup */
+	.popup .popuptext {
+	  visibility: hidden;
+	  width: 710px;
+	  background-color: #555;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 6px;
+	  padding: 8px 0;
+	  position: absolute;
+	  z-index: 1;
+	  bottom: 125%;
+	  left: 50%;
+	  margin-left: -80px; 
+	}
+	/* -80px; */
+
+
+	/* Popup arrow */
+	.popup .popuptext::after{
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+	  color: #fff;
+	}
+	
+	/* Toggle this class - hide and show the popup */
+	.popup .show  {
+	  visibility: visible;
+	  -webkit-animation: fadeIn 1s;
+	  animation: fadeIn 1s;
+	  color: #fff;
+	}
+	
+	/* Add animation (fade in the popup) */
+	@-webkit-keyframes fadeIn {
+	  from {opacity: 0;} 
+	  to {opacity: 1;}
+	}
+	
+	@keyframes fadeIn {
+	  from {opacity: 0;}
+	  to {opacity:1 ;}
+	}
+	</style>
+
+	
+	
+	<script>
+	// When the user clicks on div, open the popup
+	function showpopup(ID) {
+	  var popup = document.getElementById(ID);
+	  popup.classList.toggle("show");
+	}
+	</script>
+	
+
+
 		<div class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
 						<ul class="footer_box">
 							<h4>LEGAL</h4>
-							<li><a href="#">Data Collection Policy</a></li>
-						<!--	<li><a href="#">Return Policy for the Purchases</a></li>
+							<li>
+								<div  class="popup" onclick="showpopup('datacollectionpolicy')">
+									Data Collection Policy
+<span class="popuptext" id="datacollectionpolicy">
+	<b>Privacy Policy</b>
+	<br>
+	<i>Last Updated on 29/04/2023</i>
+	<br><br>
+	At Pinecone and Hedgehog Automated Marketing, accessible from phautomarketing.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by phautomarketing.com and how we use it.
+	<br>
+	If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+	<br>
+	This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in phautomarketing.com. This policy is not applicable to any information collected offline or via channels other than this website.
+	<br><br>
+	<b>
+	Consent
+	<br>
+	By using our website, you hereby consent to our Privacy Policy and agree to its terms.</b>
+	<br><br>
+	<b>Information we collect</b>
+	<br>
+	The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
+	<br>
+	If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+	<br>
+	When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
+	<br><br>
+	<b>How we use your information</b>
+	<br>
+	We use the information we collect in various ways, including to:
+	<br>
+	Provide, operate, and maintain our website
+	<br>
+	Improve, personalize, and expand our website
+	<br>
+	Understand and analyze how you use our website
+	<br>
+	Develop new products, services, features, and functionality
+	<br>
+	Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes
+	<br>
+	Send you emails
+	<br>
+	Find and prevent fraud
+	<br><br>
+	<b>Log Files</b>
+	<br>
+	phautomarketing.com follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+	<br>
+	<b>Cookies and Web Beacons</b>
+	<br>
+	Like any other website, phautomarketing.com uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+	<br><br>
+	<b>Our Advertising Partners</b>
+	<br>
+	Some of the advertisers on our site may use cookies and web beacons. Our advertising partners are listed below. Each of our advertising partners has their own Privacy Policy for their policies on user data. For easier access, we hyperlinked to their Privacy Policies below.
+	<br><br>
+	Google
+	<br>
+	https://policies.google.com/technologies/ads
+	<br><br>
+	<b>Advertising Partners Privacy Policies</b>
+	<br>
+	You may consult this list to find the Privacy Policy for each of the advertising partners of phautomarketing.com.
+	<br>
+	Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on phautomarketing.com, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+	<br>
+	Note that phautomarketing.com has no access to or control over these cookies that are used by third-party advertisers.
+	<br><br>
+	<b>Third Party Privacy Policies</b>
+	<br>
+	phautomarketing.com's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. 
+	<br>
+	You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+	<br><br>
+	<b>CCPA Privacy Rights (Do Not Sell My Personal Information)</b>
+	<br>
+	Under the CCPA, among other rights, California consumers have the right to:
+	<br>
+	Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
+	<br>
+	Request that a business delete any personal data about the consumer that a business has collected.
+	<br>
+	Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+	<br>
+	If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+	<br><br>
+	<b>
+		GDPR Data Protection Rights
+	</b>
+	<br>
+	We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
+	<br>
+	The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.
+	<br>
+	The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.
+	<br>
+	The right to erasure – You have the right to request that we erase your personal data, under certain conditions.
+	<br>
+	The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.
+	<br>
+	The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
+	<br>
+	The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+	<br>
+	If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+	<br><br>
+	<b>
+		Children's Information
+	</b>
+	<br>
+	Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+	<br>
+	phautomarketing.com does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+	<br><br>
+	<b>Disclaimer</b>
+	<br>
+	phautomarketing.com is in no way associated or affiliated with YouTube, Twitter, Instagram, LinkedIn, Google, Tinder, etc. All the TMs. Logos and Brand Names belong to their respective owner and we don't establish any claim or ownership of it. 
+	<br>
+	We strictly adhere to the community rules and guidelines set by the above said websites and brands.
+</span>
+								</div>
+							</li>
+							<!--
+							<li><a  href="#">Data Collection Policy</a></li>
+							<li><a href="#">Return Policy for the Purchases</a></li>
 							<li><a href="#">Youth</a></li> -->
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul class="footer_box">
 							<h4>About</h4>
-							<li><a href="#">Suggested Partners</a></li>
-							<li><a href="#">Careers</a></li>
+							<li>							
+								<div  class="popup" onclick="showpopup('trustedpartners')">
+									Trusted Partners
+<span class="popuptext" id="trustedpartners">
+<b>Is our solution insufficient? Please contact us at <i>info@phautomarketing.com</i> or check the products of our Trusted Partners</b>
+	<br>
+	<br>
+Legal but unethical applications, more complex than the ones listed here: 
+<br>
+<a href="http://norsecrow.com">Norsecrow.com</a>
+<br><br>
+Similar services, albeit more bulk and perhaps less quality:
+<br>
+<a href="https://www.instagram.com/digitspy/">@DigitSpy</a>
+</span>
+								</div>
+							</li>
+							<li>
+								<div  class="popup" onclick="showpopup('careers')">
+									Careers
+<span class="popuptext" id="careers">
+Openings may be available at LinkedIn, but you can also feel free to send your CV to us directly.
+</span>
+								</div>
+							</li>
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul class="footer_box">
-							<h4>Customer Support</h4>
-							<li><a href="mailto:webmaster@example.com">Contact Us</a></li>
+							<h4>CUSTOMER SUPPORT & FAQ</h4>
+							<li><a href="mailto:info@phautomarketing.com">Contact Us by Mail</a></li>
+							<li><a href="https://wa.me/+33751356658">Contact Us by WhatsApp</a></li>
 							<!--<li><a href="#">Shipping and Order Tracking</a></li>-->
 							<!--<li><a href="#">Easy Returns</a></li>-->
-							<li><a href="#">Return Policy</a></li>
+							<li>
+								<div  class="popup" onclick="showpopup('termandreturn')">
+									Terms and Return Policy
+<span class="popuptext" id="termandreturn">
+	Terms and Conditions<br>
+	Last Updated on 29/04/2023<br>
+	Thanks for using our products and services (“Services”). The Services are provided by Livel Aike SA. Any dispute will be handled in Argentina. By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trademark law.<br>
+	<br>
+	Use License<br>
+	<br>
+	Permission is granted to temporarily download one copy of the materials (information or software) on this website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license, you may not:<br>
+	<br>
+	modify or copy the materials;<br>
+	use the materials for any commercial purpose, or for any public display (commercial or non-commercial);<br>
+	attempt to decompile or reverse engineer any software contained on this website;<br>
+	remove any copyright or other proprietary notations from the materials; or<br>
+	transfer the materials to another person or “mirror” the materials on any other server.<br>
+	This license shall automatically terminate if you violate any of these restrictions and may be terminated by us at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.<br>
+	<br>
+	Disclaimer<br>
+	<br>
+	The materials on this website are provided “as is”. We makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, we do not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.<br>
+	<br>
+	Limitations<br>
+	<br>
+	In no event shall we or our suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on our web site, even if we or an authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.<br>
+	<br>
+	Billing<br>
+	<br>
+	Payments on our website are processed using either PayPal’s secure system or a secure and verified payment gateway, with no sensitive financial information being input through our website. Secure method of accepting payments is processed using SSL encryption. By purchasing our services you are explicitly agreeing that you clearly understand and agree to what you are purchasing and will not file a fraudulent dispute via PayPal, credit card or debit card institution.<br>
+	<br>
+	Furthermore, you have authorization to use the credit card, debit card, PayPal account or any other payment source used to make the purchase. Upon a fraudulent attempt to file a dispute or chargeback, we receive the right, if necessary, to reset all followers and likes, terminate your account and/or permanently ban your IP address. Users acknowledge chargebacks, disputes, or payment reversals will not be carried out prior to discussing the situation with our support team.<br>
+	<br>
+	Revisions and Errata<br>
+	<br>
+	The materials appearing on our website could include technical, typographical, or photographic errors. We do not warrant that any of the materials on its web site are accurate, complete, or current. We may make changes to the materials contained on its web site at any time without notice. We do not, however, make any commitment to update the materials.<br>
+	<br>
+	Links<br>
+	<br>
+	We have not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by our site. Use of any such linked web site is at the user’s own risk.<br>
+	<br>
+	Site Terms of Use Modifications<br>
+	<br>
+	We may revise these terms of use for our web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.<br>
+	<br>
+	Governing Law<br>
+	<br>
+	Any claim relating to our website shall be governed by the laws of Argentina without regard to its conflict of law provisions. General Terms and Conditions are applicable to Use of a Web Site.<br>
+	<br>
+	Support<br>
+	<br>
+	We strive to provide our users with industry-leading support. For any sales or technical questions, please email us at info@phautomarketing.com.<br>
+	<br>
+	Refund Policy<br>
+	<br>
+	We offer a full money-back guarantee for all purchases made on our website. If you are not satisfied with the product that you have purchased from us, you can get your money back no questions asked. You are eligible for a full reimbursement within 14 calendar days of your purchase.<br>
+	<br>
+	After the 14-day period you will no longer be eligible and won’t be able to receive a refund. We encourage our customers to try the product (or service) in the first two weeks after their purchase to ensure it fits your needs.<br>
+	<br>
+	If you have any additional questions or would like to request a refund, feel free to contact us.<br>
+	<br>
+	Service<br>
+	<br>
+	We are not affiliated with Instagram, Facebook or any Instagram third-party partners in any way.<br>
+	It is your sole responsibility to comply with Instagram rules and any legislation that you are subject to. You use our website at your own risk.<br>
+	We are not responsible for your actions and their consequences. We are not to blame if your Instagram account is banned for any reason.<br>
+	We require your Instagram username to obtain the required information for the Instagram API. We do not store, give away, or otherwise distribute your username to any third parties.<br>
+	The expected number of followers, likes, and views is not guaranteed to you in any way.<br>
+	We can’t guarantee the continuous, uninterrupted or error-free operability of the services.<br>
+	It is the sole responsibility of the customers to ensure their accounts are set to “public” during their use of our service. Any downtime of service in relation to a client changing their profile to “private” will not result in any payment reimbursement for that period of time.<br>
+	You agree that upon purchasing our service, that you clearly understand and agree on what you are purchasing and will not file a fraudulent dispute via the payment processor.<br>
+	We reserve the right to modify, suspend or withdraw the whole or any part of our service or any of its content at any time without notice and without incurring any liability.<br>
+	It is your sole responsibility to check whether the Terms have changed.<br>
+	<br>
+	Refund Policy<br>
+	Last Updated on 29/04/2023<br>
+	Pinecone and Hedgehog Automated Marketing is a digital rendered service, please carefully read our refund policy carefully:<br>
+	<br>
+	Pinecone and Hedgehog Automated Marketing offers a 7-day money-back guarantee policy. If you find that Pinecone and Hedgehog Automated Marketing did not provide you what you purchased within your first 7 days of service, please contact our support team via the contact us page or contact us directly at info@phautomarketing.com<br>
+	<br>
+	Your Customer Success Manager will quickly review your request. Typically, the refund will be processed within 3-10 business days depending on your banking provider. The refund will be processed through the same method as the original payment.<br>
+	<br>
+	After 7 days of service, we do not offer any refunds. When you register with Pinecone and Hedgehog Automated Marketing, you agree to pay and take responsibility for all charges made in accordance with your plan and these policies.<br>
+	<br>
+	Please note:<br>
+	In order to be fair to all clients, no exceptions are made.<br>
+	<br>
+	Because we offer a digital service, we track your delivery on our server side to ensure fairness, and truthfulness for all our customers. You are also more than welcome to provide proof of non-delivery and we will consider this. <br>
+	<br>
+	It's our mission to provide great value, and we will always try to rectify an issue before processing a refund or providing you with a website credit.<br>
+	<br>
+	We provide customers with store credit as the first option, and sometimes human behavior can create an error, however, we will do our best to fix this for you.
+</span>
+								</div>
+							</li>
 							<!--<li><a href="#">Replacement Binding Parts</a></li>-->
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul class="footer_box">
 							<ul class="social">	
+								<li class="linkedin"> <a href="https://linkedin.com/company/pinecone-and-hedgehog-automated-marketing"> <img style="max-height:25px;" src="images/linkedin-logo-square.png" alt="linkedin logo" /> </a> </li>	
 								<!--
 							  <li class="facebook"><a href="#"><span> </span></a></li>
 							  <li class="twitter"><a href="#"><span> </span></a></li>
-							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="instagram"><a href="#"><span> </span></a></li>
 						    -->
 							</ul>
 		   					
